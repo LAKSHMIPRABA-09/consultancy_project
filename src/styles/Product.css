@@ -1,0 +1,85 @@
+:root {
+  --product-grid-width: 1255px;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --btn-bg-color: #007bff;
+  --btn-hover-bg-color: #13171b;
+}
+
+.product-grid {
+  width: var(--product-grid-width);
+  margin: 20px auto; /* Add margin space */
+}
+
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px var(--box-shadow-color);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 16px var(--box-shadow-color);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: opacity 0.3s ease;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover img {
+  opacity: 0; /* Hide main image on hover */
+}
+
+.product-card:hover .hover-image {
+  opacity: 1; /* Show hover image on hover */
+}
+
+.product-card .product-info {
+  padding: 20px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: bold;
+}
+
+.product-card .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--btn-bg-color);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background-color: var(--btn-hover-bg-color);
+}

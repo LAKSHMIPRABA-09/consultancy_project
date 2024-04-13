@@ -1,0 +1,97 @@
+/* src/styles/Header.css */
+.header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  flex-grow: 1;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-menu {
+  margin-left: 40px;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #FF7F00;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.search-button, .user-button {
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.search-button:hover, .user-button:hover {
+  background-color: #F5F5F5;
+}
+
+.search-button i, .user-button i {
+  color: #4A4A4A;
+}
+
+.search-button i:hover, .user-button i:hover {
+  color: #FF7F00;
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px; /* Adjust spacing as needed */
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .nav-menu {
+    display: none; /* Hide the navigation menu on smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .nav-menu {
+    margin-left: auto; /* Move the navigation menu to the right */
+  }
+
+  .nav-item {
+    margin-right: 10px; /* Reduce margin between navigation items */
+  }
+}

@@ -1,0 +1,358 @@
+/* src/styles/Home.css */
+.home {
+    padding: 20px;
+  }
+  
+  .hero {
+    background-image: url('path/to/hero-image.jpg'); /* Set hero background image */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Adjust hero height */
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #db1414; /* Set text color */
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #e6a61d;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center; /* Aligns items horizontally (along the main axis) */
+    align-items: center; /* Aligns items vertically (along the cross axis) */
+    text-align: center; /* Aligns text inside the hero-content */
+  }
+  
+  .hero-content {
+    max-width: 600px; /* Adjust this value to control the width of the content */
+  }
+  
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background-color: #ff7f00; /* Set primary button color */
+    color: #fff; /* Set primary button text color */
+  }
+  
+  .btn-secondary {
+    background-color: #333; /* Set secondary button color */
+    color: #fff; /* Set secondary button text color */
+  }
+  
+  .featured-products, .about-us {
+    margin-top: 50px;
+  }
+  
+  .about-content {
+    text-align: center;
+  }
+  
+  .about-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  /* Home.css */
+
+.two-minute-read {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .two-minute-read .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .two-minute-read h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .two-minute-read .article {
+    margin-top: 20px;
+  }
+  
+  .two-minute-read .article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .two-minute-read .article p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .two-minute-read .article .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .two-minute-read .article .btn:hover {
+    background-color: #0056b3;
+  }
+/* Home.css */
+
+.featured-products {
+    padding: 50px 0;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-card .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card .btn:hover {
+    background-color: #0056b3;
+  }
+/* Home.css */
+
+.story-detail {
+    padding: 50px 0;
+  }
+  
+  .making-video {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .making-video .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .making-video h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .two-minute-read {
+    padding: 50px 0;
+  }
+  
+  .two-minute-read .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .two-minute-read h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .featured-products {
+    padding: 50px 0;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-card .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .history {
+    padding: 50px 0;
+  }
+  
+  .history .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .history h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+      /* Home.css */
+
+/* Home.css */
+
+/* Existing styles... */
+/* Home.css */
+
+:root {
+  --button-padding: 15px 30px;
+  --button-border-radius: 8px;
+  --button-background-color: #007bff;
+  --button-color: #fff;
+  --button-font-size: 1.2rem;
+  --button-font-weight: bold;
+  --button-transition: background-color 0.3s ease;
+  --button-border: 2px solid transparent;
+}
+
+.latest-updates-button .btn {
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-background-color);
+  color: var(--button-color);
+  text-decoration: none;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  transition: var(--button-transition);
+  border: var(--button-border);
+  cursor: pointer;
+}
+
+.latest-updates-button {
+  margin-top: 50px; /* Adjust as needed */
+  text-align: center;
+}
+
+.latest-updates-button .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-updates-button .btn {
+  padding: 15px 30px; /* Increase padding for larger button */
+  border-radius: 8px; /* Increase border radius for rounded corners */
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  text-decoration: none;
+  font-size: 1.2rem; /* Increase font size for larger text */
+  font-weight: bold; /* Make text bold for emphasis */
+  transition: background-color 0.3s ease;
+  border: 2px solid transparent; /* Add border for a more prominent button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.latest-updates-button .btn:hover {
+  background-color: #0056b3; /* Set button background color on hover */
+}
+
+/* Add more styles for button hover effects */
+.latest-updates-button .btn:hover {
+  transform: scale(1.05); /* Scale up button on hover */
+}
+
+.latest-updates-button .btn:active {
+  transform: scale(0.95); /* Scale down button when clicked */
+  background-color: #004080; /* Darken button color when clicked */
+}
+
+/* End of Home.css */

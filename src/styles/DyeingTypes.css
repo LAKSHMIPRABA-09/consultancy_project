@@ -1,0 +1,148 @@
+/* src/styles/DyingTypes.css */
+.dying-types-container {
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .dying-type {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url('../assets/images/bg3.png');
+  }
+  
+  .dying-type .content {
+    flex: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+  }
+  
+  .dying-type .image {
+    flex: 1;
+  }
+  
+  .dying-type .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Reverse the order for every odd occurrence of .dying-type */
+  .dying-type:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  .dying-types-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dying-type {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .dying-type:nth-child(odd) .content {
+    order: 2;
+  }
+  
+  .dying-type:nth-child(odd) .image {
+    order: 1;
+  }
+  
+  .dying-type:nth-child(even) .content {
+    order: 1;
+  }
+  
+  .dying-type:nth-child(even) .image {
+    order: 2;
+  }
+  
+  .dying-type .content {
+    flex: 1;
+  }
+  
+  .dying-type .image img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .dying-type {
+      flex-direction: column;
+    }
+  
+    .dying-type .content,
+    .dying-type .image {
+      order: initial;
+      padding: 0;
+      margin-top: 20px;
+    }
+  
+    .dying-type .image img {
+      width: 100%;
+    }
+  }
+  .dying-types-container {
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f5deb3; /* Light brown background color */
+  }
+  
+  .dying-types-container .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dying-types-container .container .content {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  .dying-types-container .container .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .dying-types-container .container .content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .dying-types-container .container .image img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .dying-types-container .container {
+      flex-direction: column;
+    }
+  
+    .dying-types-container .container .content,
+    .dying-types-container .container .image {
+      padding-right: 0;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .dying-types-container .container .image img {
+      width: 100%;
+    }
+  }
+  
